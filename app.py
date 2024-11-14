@@ -9,7 +9,7 @@ def login():
 @app.route('/login', methods=['POST'])
 def login_user():
     username = request.form['username']
-    return redirect(url_for('welcome', username=username))
+    return redirect(url_for('welcome back', username=username))
 
 @app.route('/welcome/<username>')
 def welcome(username):
